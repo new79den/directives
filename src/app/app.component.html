@@ -9,6 +9,11 @@
 <h2>*hgIf</h2>
 
 <div *ngIf="switch"> Conditional Text</div>
+
+<template [ngIf]="switch">
+  <div> Conditional Text</div>
+</template>
+
 <button (click)="onSwitch()">button</button>
 
 <h2>*hgFor</h2>
@@ -21,8 +26,10 @@
 
 <h2> ngSwitch </h2>
 
-<div [ngSwitch] = "value">
+
+<div [ngSwitch]="value">
   <p *ngSwitchCase="10"> 10</p>
   <p *ngSwitchCase="100"> 100</p>
-  <p *ngSwitchDefault=""> Default</p>
+  <p *ngSwitchDefault> Default</p>
 </div>
+
