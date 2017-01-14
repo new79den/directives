@@ -3,9 +3,9 @@
 
 <div [ngStyle]="{'background-color':'red'}"></div>
 
-
-
 <h2>Custom Attribute Directives</h2>
-
 <div [dirHighlight] = "'blue'" [defaultColor] = "'red'">text</div>
 
+<h2>*hgIf</h2>
+<div *ngIf="switch"> Conditional Text</div>
+<button (click)="onSwitch()">button</button>
